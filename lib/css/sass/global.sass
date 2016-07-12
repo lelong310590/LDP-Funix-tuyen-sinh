@@ -1,0 +1,236 @@
+@import 'variable.sass';
+@import 'mobile.sass';
+@import 'tablet.sass';
+@import 'desktop.sass';
+
+body
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $textColor;
+
+.loader
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	top: 0;
+	left: 0;
+	z-index: 9999999999;
+	.header
+		animation: animatedBackground 5s linear infinite;
+		.animation-promo
+			margin-top: 120px;
+			img 
+				max-width: 313px;
+				position: relative;
+				animation: flyingBalloon 2s linear infinite;
+	.animation-text
+		margin-top: 250px;
+		h2
+			font-size: 70px;
+			position: absolute;
+			left: 50%;
+			margin-left: -1.9em;
+			&:before 
+				content: attr(data-content);
+				color: $mainColor;
+				max-width: 5em;
+				animation: loading 3s infinite;
+				position: absolute;
+				overflow: hidden;
+				white-space: nowrap;
+.header
+	background-image: url("../images/head-bg.jpg")
+	-webkit-background-image: url("../images/head-bg.jpg");
+	-o-background-image: url("../images/head-bg.jpd");
+	-moz-background-image: url("../images/head-bg.jpd");
+	background-position: top left;
+	background-size: cover;
+	background-repeat: repeat-x;
+	form
+		background-color: rgba(15, 83, 162, .2);
+		padding-bottom: 15px;
+		legend
+			text-align: center;
+			color: $mainColor;
+			text-transform: uppercase;
+			border-color: $mainColor;
+			font-weight: bold;
+		.form-group
+			padding: 0 15px;
+		.form-control
+			border-radius: 0;
+			border-color: $textColor;
+			box-shadow: none;
+			font-size: 18px;
+			padding: 5px 12px;
+		.register-form-submit
+			font-size: 18px;
+
+.main-navigation
+	background: #fbf9fc;
+	.navbar
+		.navbar-brand
+			max-width: 150px;
+		.navbar-nav
+			li 
+				a 
+					color: $textColor;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 16px;
+					&:hover 
+						color: $mainColor;
+			.register-link
+				a 
+					color: $mainColor;	
+section 
+	h3 
+		text-shadow: 0 2px 2px rgba(0,1,1,.1);
+		font-size: 32px;						
+		margin-bottom: 30px;
+		font-weight: bold;
+
+.intro-section
+	background: #e1e1e1;
+	.benefit
+		border-bottom: 1px solid #272727;
+	.intro-section-wrapper
+		padding-top: 60px;	
+.job-opportunity-wrapper
+	background: #272727;
+	color: #fff;	
+	.job-opportunity-intro
+		font-size: 20px;
+		margin-bottom: 60px;	
+	.job-opportunity-item-title
+		text-transform: uppercase;
+		margin-top: 20px;
+.benefit-wrapper
+	background: #272727;
+	color: #fff;	
+	.benefit-item
+		margin-bottom: 15px;	
+		&:last-child 
+			margin-bottom: 0;
+		.media-heading
+			font-weight: bold;
+.section-button-register
+	color: $textColor;
+	border-color: $textColor
+	&:hover 
+		color: #fff;
+		background: $mainColor;
+
+.schedule-section
+	background-image: url("../images/cloud.png");
+	-moz-background-image: url("../images/cloud.png");
+	-o-background-image: url("../images/cloud.png");
+	-webkit-background-image: url("../images/cloud.png");
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	background-color: #e1e1e1;
+	.schedule-item-description
+		border-radius: 15px;
+		background: rgba(180,181,181,.6);
+		padding: 15px;
+		.schedule-item-title
+			text-transform: uppercase;
+			font-size: 16px;
+	.section-button-register
+		margin-top: 115px;
+		margin-bottom: 60px;
+.testimonial-section
+	background: #e1e1e1;
+	padding-bottom: 25px;		
+	.testimonial-item
+		color: #fff;
+		padding-top: 140px;
+		padding-bottom: 25px;
+		font-size: 13px;
+		&:nth-child(1)
+			background-image: url("../images/DeveloperExhaustion.jpg");
+			-moz-background-image: url("../images/DeveloperExhaustion.jpg");
+			-o-background-image: url("../images/DeveloperExhaustion.jpg");
+			-webkit-background-image: url("../images/DeveloperExhaustion.jpg");
+			background-size: auto 100%;
+			background-position: top right;
+		&:nth-child(2)
+			background-image: url("../images/innovative-technology.jpg");
+			-moz-background-image: url("../images/innovative-technology.jpg");
+			-o-background-image: url("../images/innovative-technology.jpg");
+			-webkit-background-image: url("../images/innovative-technology.jpg");
+			background-size: auto 100%;
+			background-position: top center;
+		&:nth-child(3)
+			background-image: url("../images/Love-Is-Key-Of-Heart-Wallpaper.jpg");
+			-moz-background-image: url("../images/Love-Is-Key-Of-Heart-Wallpaper.jpg");
+			-o-background-image: url("../images/Love-Is-Key-Of-Heart-Wallpaper.jpg");
+			-webkit-background-image: url("../images/Love-Is-Key-Of-Heart-Wallpaper.jpg");
+			background-size: auto 100%;
+			background-position: top left 20%;
+		&:nth-child(4)
+			background-image: url("../images/time2.jpg");
+			-moz-background-image: url("../images/time2.jpg");
+			-o-background-image: url("../images/time2.jpg");
+			-webkit-background-image: url("../images/time2.jpg");
+			background-size: auto 100%;
+			background-position: bottom center;
+		.testimonial-detail, .testimonial-avatar
+			z-index: 99999;
+			position: relative;
+		.testimonial-avatar
+			margin-bottom: 25px;
+		.tesimonial-name
+			text-transform: uppercase;
+			border-bottom: 1px solid rgba(255,255,255,.8);
+			margin-bottom: 15px;
+		.testimonial-content
+			margin-bottom: 20px;
+
+.faq-section
+	background-image: url("../images/faq-bg.jpg");
+	-moz-background-image: url("../images/faq-bg.jpg");
+	-o-background-image: url("../images/faq-bg.jpg");
+	-webkit-background-image: url("../images/faq-bg.jpg");	
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;	
+.faq-more
+	color: #e1e1e1;
+	border-color: #fff;	
+.footer-content
+	.nav 
+		li 
+			a
+				padding: 3px 0 3px 0;
+				color: $textColor;
+				text-decoration: underline;
+				&:hover 
+					background: none;
+					color: $mainColor;
+.footer				
+	background-image: url("../images/dark-cloud.png");
+	-moz-background-image: url("../images/dark-cloud.png");
+	-o-background-image: url("../images/dark-cloud.png");
+	-webkit-background-image: url("../images/dark-cloud.png");	
+	background-position: center bottom 110%;
+	background-repeat: repeat-x;
+	background-color: #fbf9fc;
+	.footer-logo
+		max-width: 200px;
+		margin-left: 15px;
+	.footer-head
+		text-transform: uppercase;
+		font-weight: bold;
+.testimonial-link
+	color: #fff;
+	font-size: 30px;
+	padding: 0 14px;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 100%;	
+	&:hover 
+		background-color: $mainColor;	
+		color: #fff;

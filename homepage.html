@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Funix</title>
+
+	<!-- Load CSS -->
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="lib/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="lib/css/animate.css">
+	<link rel="stylesheet" href="lib/css/style.min.css">
+	
+</head>
+
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=927362164006956";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="loader" class="loader hidden-xs hidden-sm">
+		<div class="header col-xs-12 noPadding">
+			<div class="container">
+				<div class="row">
+					<div class="animation-promo hidden-xs hidden-sm col-md-6">
+						<img src="lib/images/ballon.png" alt="" class="img-responsive">
+					</div>
+					<div class="animation-text hidden-xs hidden-sm col-md-6 text-center">
+						<h2 data-content="Searching...">Searching...</h2>
+					</div>
+					<img src="lib/images/city.png" alt="" class="img-responsive center-block hidden-xs hidden-sm col-xs-12 noPadding city wow shake" data-wow-duration="2s">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header col-xs-12 noPadding" id="header">
+		<div class="container">
+			<div class="row">
+				<div class="animation-promo hidden-xs hidden-sm col-md-6 wow rubberBand" data-wow-duration="4s">
+					<img src="lib/images/ballon.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<!-- Register Form -->
+					<form action="" method="POST" role="form" class="col-xs-12 noPadding" id="registerForm">
+						<legend>Đăng ký thông tin</legend>
+						<p class="text-center">Khi bạn muốn tìm hiểu hay mong muốn theo đuổi ngành CNTT, tìm hiểu hay đăng ký xét tuyển đại học trực tuyến FUNiX và gia nhập cộng đồng lập trình viên – phát triển phần mềm, ứng dụng </p>
+						<div class="form-group">
+							<input type="text" class="form-control" id="formName" name="formName" placeholder="Họ và tên" required="Họ và tên không được để trống">
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-xs-12 col-md-12 col-md-3">
+									<select name="formDay" id="formDay" class="form-control" required="Ngày sinh không được để trống">
+										<option value="">Ngày</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+								</div>
+								<div class="col-xs-12 col-md-12 col-md-3">
+									<select name="formMonth" id="formMonth" class="form-control" required="Tháng sinh không được để trống">
+										<option value="">Tháng</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+								<div class="col-xs-12 col-md-12 col-md-3">
+									<select name="formYear" id="formYear" class="form-control" required="Năm sinh không được để trống">
+										<option value="">Năm</option>
+										<option value="1980">1980</option>
+										<option value="1981">1981</option>
+										<option value="1982">1982</option>
+										<option value="1983">1983</option>
+										<option value="1984">1984</option>
+										<option value="1985">1985</option>
+										<option value="1986">1986</option>
+										<option value="1987">1987</option>
+										<option value="1988">1988</option>
+										<option value="1989">1989</option>
+										<option value="1990">1990</option>
+										<option value="1991">1991</option>
+										<option value="1992">1992</option>
+										<option value="1993">1993</option>
+										<option value="1994">1994</option>
+										<option value="1995">1995</option>
+										<option value="1996">1996</option>
+										<option value="1997">1997</option>
+										<option value="1998">1998</option>
+										<option value="1999">1999</option>
+										<option value="2000">2000</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="tel" class="form-control" id="formTel" name="formTel" placeholder="Số điện thoại" required="Số điện thoại không được để trống">
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" id="formEmail" name="formEmail" placeholder="Email" required="Email không được để trống">
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" id="formAddress" name="formAddress" placeholder="Địa chỉ" required="Địa chỉ không được để trống">
+						</div>
+					
+						<button type="submit" class="btn btn-primary register-form-submit blank-button">Đăng ký ngay</button>
+
+						<a class="btn btn-primary register-form-submit blank-button hidden-md hidden-lg toggleForm">Đăng ký ngay</a>
+					</form>
+					<!-- End Register Form -->
+				</div>
+				<img src="lib/images/city.png" alt="" class="img-responsive center-block hidden-xs hidden-sm col-xs-12 noPadding city wow shake" data-wow-duration="2s">
+			</div>
+		</div>
+	</header>
+
+	<main class="main col-xs-12 noPadding" id="main">
+		<div class="main-navigation col-xs-12">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar" role="navigation">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".responsive-navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#"><img src="lib/images/logo.png" alt="" class="img-responsive"></a>
+							</div>
+					
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse responsive-navbar">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="#">Giới thiệu</a></li>
+									<li><a href="#">Chương trình học</a></li>
+									<li><a href="#">Các học</a></li>
+									<li><a href="#">Mentors</a></li>
+									<li><a href="#">Tin tức</a></li>
+									<li><a href="#">Câu hỏi thường gặp</a></li>
+									<li><a href="#">Vào học</a></li>
+									<li class="register-link toRegister"><a href="#">Đăng ký</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /.main-navigation -->
+		<section class="intro-section col-xs-12 noPadding">
+			<div class="benefit intro-section-wrapper col-xs-12 noPadding">
+				<div class="container">
+					<div class="row">
+						<h3 class="text-center">lợi thế khi theo ngành công nghệ thông tin</h3>
+						<div class="benefit-wrapper col-xs-12">
+							<div class="benefit-item col-xs-12 noPadding wow fadeInRight" data-wow-duration="2s">
+								<div class="media">
+									<a class="pull-left">
+										<img class="media-object img-responsive center-block" src="lib/images/salary.png" alt="Image">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">LƯƠNG CAO</h4>
+										<p>CNTT trong top 5 nghề có lương trung bình cao nhất VN</p>
+									</div>
+								</div>
+							</div><!-- /.benefit-item -->
+							<div class="benefit-item col-xs-12 noPadding wow fadeInRight" data-wow-duration="2s">
+								<div class="media">
+									<a class="pull-left">
+										<img class="media-object img-responsive center-block" src="lib/images/job-opportunity.png" alt="Image">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">CƠ HỘI VIỆC LÀM LỚN</h4>
+										<p>Việc làm ngành CNTT tăng trưởng 47% mỗi năm <br> Dự kiến đến 2020, VN sẽ thiếu hụt 500.000 nhân sự ngành CNTT</p>
+									</div>
+								</div>
+							</div><!-- /.benefit-item -->
+							<div class="benefit-item col-xs-12 noPadding wow fadeInRight" data-wow-duration="2s">
+								<div class="media">
+									<a class="pull-left">
+										<img class="media-object img-responsive center-block" src="lib/images/international-citizens.png" alt="Image">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">TRỞ THÀNH CÔNG DÂN QUỐC TẾ</h4>
+										<p>Có cơ hội làm việc trong môi trường Quốc Tế . TPHCM và Hà Nội nằm trong top 20 thành phố có dịch vụ outsourcing phần mềm tốt nhất thế giới</p>
+									</div>
+								</div>
+							</div><!-- /.benefit-item -->
+						</div>
+					</div>
+				</div>
+			</div><!-- /.benefit -->
+
+			<div class="job-opportunity intro-section-wrapper col-xs-12 noPadding">
+				<div class="container">
+					<div class="row">
+						<h3 class="text-center">Cơ hội nghề nghiệp</h3>
+						<div class="job-opportunity-wrapper col-xs-12 noPadding">
+							<p class="job-opportunity-intro text-center">Sau mỗi kỳ học, sinh viên đã có được những kỹ năng và kiến thức của một lĩnh vực cụ thể</p>
+							<div class="job-opportunity-item-list col-xs-12">
+								<div class="row">
+									<div class="job-opportunity-item col-xs-6 col-sm-4 col-md-2 wow fadeInUp" data-wow-duration="2s">
+										<img src="lib/images/it-engineer.png" alt="" class="img-responsive center-block">
+										<h4 class="job-opportunity-item-title text-center">Kỹ sư phần mềm</h4>
+									</div><!-- /.job-opportunity-item -->
+									<div class="job-opportunity-item col-xs-6 col-sm-4 col-md-2 wow fadeInUp" data-wow-duration="2s">
+										<img src="lib/images/it-helpdesk.png" alt="" class="img-responsive center-block">
+										<h4 class="job-opportunity-item-title text-center">Chuyên viên công nghệ thông tin</h4>
+									</div><!-- /.job-opportunity-item -->
+									<div class="job-opportunity-item col-xs-6 col-sm-4 col-md-2 wow fadeInUp" data-wow-duration="2s">
+										<img src="lib/images/coder.png" alt="" class="img-responsive center-block">
+										<h4 class="job-opportunity-item-title text-center">Lập trình viên</h4>
+									</div><!-- /.job-opportunity-item -->
+									<div class="job-opportunity-item col-xs-6 col-sm-4 col-md-2 wow fadeInUp" data-wow-duration="2s">
+										<img src="lib/images/network.png" alt="" class="img-responsive center-block">
+										<h4 class="job-opportunity-item-title text-center">Chuyên viên phân tích mạng</h4>
+									</div><!-- /.job-opportunity-item -->
+									<div class="job-opportunity-item col-xs-6 col-sm-4 col-md-2 wow fadeInUp" data-wow-duration="2s">
+										<img src="lib/images/app-developer.png" alt="" class="img-responsive center-block">
+										<h4 class="job-opportunity-item-title text-center">Phát triển ứng dụng</h4>
+									</div><!-- /.job-opportunity-item -->
+									<div class="job-opportunity-item col-xs-6 col-sm-4 col-md-2 wow fadeInUp" data-wow-duration="2s">
+										<img src="lib/images/web-developer.png" alt="" class="img-responsive center-block">
+										<h4 class="job-opportunity-item-title text-center">Thiết kế và phát triển web</h4>
+									</div><!-- /.job-opportunity-item -->
+								</div>
+								<a href="#registerForm" class="section-button-register filled-button text-center middle-button color-button toRegister">Đăng ký ngay</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.job-opportunity -->
+		</section>
+
+		<section class="why-choice-section col-xs-12 noPadding">
+			<div class="timeline"></div>
+			<div class="color-timeline"></div>
+			<div class="container">
+				<div class="row">
+					<h3 class="text-center">Tại sao chọn FUNiX?</h3>
+					<div class="why-choice-wrapper col-xs-12">
+						<div class="why-choice-item col-xs-12 noPadding">
+							<div class="why-choice-image col-xs-12 col-sm-12 col-md-6 col-md-push-6 leftBorder">
+								<img src="lib/images/saving.png" alt="" class="img-responsive center-block">
+							</div>
+							<div class="dotSign"></div>
+							<div class="why-choice-qoute col-xs-12 col-sm-12 col-md-6 text-right col-md-pull-6 rightBorder">
+								<p class="why-choice-qoute-title">Trải nghiệm <b>phương pháp<br>học tập hoàn toàn mới</b></p>
+								<div class="why-choice-qoute-description col-xs-12 noPadding">
+									Trên thế giới, học online đã và đang chứng minh là xu hướng của giáo dục trong thời đại mới với các ưu điểm không thể phủ nhận: học mọi lúc, mọi nơi phù hợp nhất với hoàn cảnh và điều kiện thời gian của người học, tiết kiệm chi phí đi lại, nội trú (ăn ở) cho sinh viên.
+								</div>
+							</div>
+						</div><!-- /.why-choice-item -->
+
+						<div class="why-choice-item col-xs-12 noPadding">
+							<div class="why-choice-image col-xs-12 col-sm-12 col-md-6 rightBorder">
+								<img src="lib/images/professional.png" alt="" class="img-responsive center-block">
+							</div>
+							<div class="dotSign"></div>
+							<div class="why-choice-qoute col-xs-12 col-sm-12 col-md-6 text-left leftBorder">
+								<p class="why-choice-qoute-title">Rèn luyện <br><b>tác phong công nghiệp</b></p>
+								<div class="why-choice-qoute-description col-xs-12 noPadding">
+									Nhập học để tự chủ về thời gian và tiến độ học tập của bạn.<br>
+									Do đó, bạn học được học tính tự chủ của thế hệ nhân viên đẳng cấp Quốc tế.
+								</div>
+							</div>
+						</div><!-- /.why-choice-item -->
+
+						<div class="why-choice-item col-xs-12 noPadding">
+							<div class="why-choice-image col-xs-12 col-sm-12 col-md-6 col-md-push-6 leftBorder">
+								<img src="lib/images/employer.png" alt="" class="img-responsive center-block">
+							</div>
+							<div class="dotSign"></div>
+							<div class="why-choice-qoute col-xs-12 col-sm-12 col-md-6 text-right col-md-pull-6 rightBorder">
+								<p class="why-choice-qoute-title">Học cùng <b>nhà tuyển dụng</b></p>
+								<div class="why-choice-qoute-description col-xs-12 noPadding">
+									Sinh viên FUNiX rất đa dạng về đối tượng theo học: từ học sinh, sinh viên đến các LTV, nghiên cứu sinh… gia nhập một cộng đồng đa dạng như vậy bạn sẽ học được rất nhiều cả về kiến thức học lẫn kiến thức về cuộc sống.<br>
+									Mentor, bạn cùng học vừa là bạn học, thầy dạy, nhưng cũng chính là nhà tuyển dụng, đồng nghiệp, đối tác, khách hàng trong tương lai.
+								</div>
+							</div>
+						</div><!-- /.why-choice-item -->
+
+						<div class="why-choice-item col-xs-12 noPadding">
+							<div class="why-choice-image col-xs-12 col-sm-12 col-md-6 rightBorder">
+								<img src="lib/images/job-network.png" alt="" class="img-responsive center-block">
+							</div>
+							<div class="dotSign"></div>
+							<div class="why-choice-qoute col-xs-12 col-sm-12 col-md-6 text-left leftBorder">
+								<p class="why-choice-qoute-title">Xây dựng <br><b>mạng lưới công việc rộng lớn</b></p>
+								<div class="why-choice-qoute-description col-xs-12 noPadding">
+									Nhập học để tự chủ về thời gian và tiến độ học tập của bạn.<br>
+									Do đó, bạn học được học tính tự chủ của thế hệ nhân viên đẳng cấp Quốc tế.
+								</div>
+							</div>
+						</div><!-- /.why-choice-item -->
+
+						<div class="why-choice-item col-xs-12 noPadding">
+							<div class="why-choice-image col-xs-12 col-sm-12 col-md-6 col-md-push-6 leftBorder">
+								<img src="lib/images/soon-working.png" alt="" class="img-responsive center-block">
+							</div>
+							<div class="dotSign"></div>
+							<div class="why-choice-qoute col-xs-12 col-sm-12 col-md-6 text-right col-md-pull-6 rightBorder">
+								<p class="why-choice-qoute-title">Sớm đi làm</p>
+								<div class="why-choice-qoute-description col-xs-12 noPadding">
+									Với trang bị vốn kiến thức từ lý thuyết đến thực tế… bạn đã có thể tự tin bước chân vào sự nghiệp trong ngành CNTT ngay sau 1 năm học (tương đương kết thúc 3 chứng chỉ).
+								</div>
+							</div>
+						</div><!-- /.why-choice-item -->
+
+						<div class="why-choice-item col-xs-12 noPadding">
+							<div class="why-choice-image col-xs-12 col-sm-12 col-md-6 rightBorder">
+								<img src="lib/images/true-certificate.png" alt="" class="img-responsive center-block">
+							</div>
+							<div class="dotSign"></div>
+							<div class="why-choice-qoute col-xs-12 col-sm-12 col-md-6 text-left leftBorder">
+								<p class="why-choice-qoute-title">Tốt nghiệp với <b>tấm bằng giá trị và vô vàn kĩ năng, trải nghiệm thực tế</b></p>
+								<div class="why-choice-qoute-description col-xs-12 noPadding">
+									Bằng Kỹ sư chuyên ngành Kỹ thuật phần mềm Đại học FPT được Bộ Giáo dục công nhận, được học lên Thạc sĩ, Tiến sĩ (chỉ sau 2,5-3 năm học)
+								</div>
+							</div>
+						</div><!-- /.why-choice-item -->
+						<a href="#registerForm" class="section-button-register middle-button blank-button text-center toRegister">Đăng ký ngay</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="schedule-section col-xs-12 noPadding">
+			<div class="container">
+				<div class="row">
+					<h3 class="text-center">Chương trình học</h3>
+					<div class="schedule-section-wrapper col-xs-12">
+						<div class="schedule-list col-xs-12 noPadding">
+							<div class="row">
+								<div class="schedule-item col-xs-12 col-sm-12 col-md-4 wow fadeInUp" data-wow-delay="2s">
+									<div class="schedule-images col-xs-12 noPadding">
+										<img src="lib/images/learning-program.png" alt="" class="img-responsive center-block">
+									</div>
+									<div class="schedule-item-description col-xs-12 noPadding text-center">
+										<p class="schedule-item-title">
+											Chương trình học<br>
+											gồm 8 kì<br>
+										</p>
+										Mỗi kì 4 tháng
+									</div>
+								</div><!-- /.schedule-item -->
+
+								<div class="schedule-item col-xs-12 col-sm-12 col-md-4  wow fadeInUp" data-wow-delay="2s">
+									<div class="schedule-images col-xs-12 noPadding">
+										<img src="lib/images/file.png" alt="" class="img-responsive center-block">
+									</div>
+									<div class="schedule-item-description col-xs-12 noPadding text-center">
+										<p class="schedule-item-title">
+											Nguồn học liệu từ các trường ĐH hàng đầu thế giới, 
+										</p>
+										Chất lượng đào tạo Mỹ với giá của các
+										nước thứ 3
+									</div>
+								</div><!-- /.schedule-item -->
+
+								<div class="schedule-item col-xs-12 col-sm-12 col-md-4  wow fadeInUp" data-wow-delay="2s">
+									<div class="schedule-images col-xs-12 noPadding">
+										<img src="lib/images/certificate-process.png" alt="" class="img-responsive center-block">
+									</div>
+									<div class="schedule-item-description col-xs-12 noPadding text-center">
+										<p class="schedule-item-title">
+											Hoàn thành xong 3/8 chứng chỉ học
+										</p>
+										Sinh viên được phỏng vấn với nhà tuyển dụng và có thể được nhà tuyển dụng mời đi làm ngay hoặc được F-Soft nhận vào làm với chức danh nhân viên dự bị.
+									</div>
+								</div><!-- /.schedule-item -->
+							</div>
+						</div><!-- /.schedule-list -->
+						<div class="degree-list col-xs-12 noPadding">
+							<div class="top-list col-xs-12 noPadding wow fadeInUp" data-wow-delay="2s">
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4">
+									<img src="lib/images/cert1.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4">
+									<img src="lib/images/cert2.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4">
+									<img src="lib/images/cert3.png" alt="" class="img-responsive center-block">
+								</div>
+
+								<div class="top-list-item col-xs-6 col-sm-6 hidden-md hidden-lg">
+									<img src="lib/images/cert4.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 hidden-md hidden-lg">
+									<img src="lib/images/cert5.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 hidden-md hidden-lg">
+									<img src="lib/images/cert6.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 hidden-md hidden-lg">
+									<img src="lib/images/cert7.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 hidden-md hidden-lg">
+									<img src="lib/images/cert8.png" alt="" class="img-responsive center-block">
+								</div>
+							</div><!-- /.top-list -->
+							<div class="middle-list col-md-12 hidden-xs hidden-sm noPadding wow fadeInUp" data-wow-delay="2s">
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4 col-md-push-2">
+									<img src="lib/images/cert4.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4 col-md-push-2">
+									<img src="lib/images/cert5.png" alt="" class="img-responsive center-block">
+								</div><!-- /.middle-list -->
+							</div>
+							<div class="bottom-list col-md-12 hidden-xs hidden-sm noPadding wow fadeInUp" data-wow-delay="2s">
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4">
+									<img src="lib/images/cert6.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4">
+									<img src="lib/images/cert7.png" alt="" class="img-responsive center-block">
+								</div>
+								<div class="top-list-item col-xs-6 col-sm-6 col-md-4">
+									<img src="lib/images/cert8.png" alt="" class="img-responsive center-block">
+								</div>
+							</div><!-- /.bottom-list -->
+						</div><!-- /.degree-list -->
+					</div><!-- /.schedule-section-wrapper -->
+					<div class="clearfix"></div>
+					<a href="#registerForm" class="section-button-register middle-button text-center blank-button toRegister">Đăng ký ngay</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonial-section col-xs-12 noPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3 testimonial-item wow fadeInLeft" data-wow-delay="2s">
+						<img src="lib/images/testimonial-avatar.png" alt="" class="img-responsive center-block testimonial-avatar">
+						<div class="testimonial-detail col-xs-12 noPadding text-center">
+							<p class="tesimonial-name">Đào Huy Cương <br>“Đi làm sau 4 tháng học tại FUNiX”</p>
+							<div class="testimonial-content col-xs-12 noPadding">
+								Từng quan điểm học tập online tại FUNiX mà xin được việc chỉ là lời “quảng cáo”, giờ đây khi chính thức trở thành thành viên của FPT Software, Đào Huy Cương nhận ra mình đã đánh giá thấp chương trình học trực tuyến này.
+							</div>
+							<a href="" class="testimonial-link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						</div>
+					</div><!-- /.testimonial-item -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3 testimonial-item wow fadeInLeft" data-wow-delay="2s">
+						<img src="lib/images/testimonial-avatar.png" alt="" class="img-responsive center-block testimonial-avatar">
+						<div class="testimonial-detail col-xs-12 noPadding text-center">
+							<p class="tesimonial-name">Nguyễn Thái Hà<br> “Lớp học có 1 không 2 nhân viên dạy Giám đốc”</p>
+							<div class="testimonial-content col-xs-12 noPadding">
+								Để không bị tụt hậu trước sự thay đổi nhanh chóng của lĩnh vực này, anh quyết định đi học bổ sung kiến thức, bên cạnh việc học hỏi từ những trải nghiệm thực tế. Đăng ký học đại học online, anh Hà khá bất ngờ khi 'giáo viên' chính là cấp dưới của mình.
+							</div>
+							<a href="" class="testimonial-link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						</div>
+					</div><!-- /.testimonial-item -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3 testimonial-item wow fadeInLeft" data-wow-delay="2s">
+						<img src="lib/images/testimonial-avatar.png" alt="" class="img-responsive center-block testimonial-avatar">
+						<div class="testimonial-detail col-xs-12 noPadding text-center">
+							<p class="tesimonial-name">Nguyễn anh hoàng<br> “tôi thấy funix là chìa khóa quan trọng trong việc thực hiện ước muốn của tôi”</p>
+							<div class="testimonial-content col-xs-12 noPadding">
+								Công việc hàng ngày khá bận rộn, và tôi chỉ có thời gian rỗi vào khoảng 8h tối hàng tuần. Việc theo đuổi đam mê của mình rất khó, nhưng sau khi tôi tìm hiểu về FUNIX, tôi thấy thật sự phù hợp. Và tôi cũng luôn nghĩ rằng, hãy làm công việc mình thích, vì công việc chính là cuộc đời mình sau này.
+							</div>
+							<a href="" class="testimonial-link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						</div>
+					</div><!-- /.testimonial-item -->
+
+					<div class="col-xs-12 col-sm-6 col-md-3 testimonial-item wow fadeInLeft" data-wow-delay="2s">
+						<img src="lib/images/testimonial-avatar.png" alt="" class="img-responsive center-block testimonial-avatar">
+						<div class="testimonial-detail col-xs-12 noPadding text-center">
+							<p class="tesimonial-name">Nguyễn Cảnh Đông Đô<br> “Wow, đây là những điều mình cần”</p>
+							<div class="testimonial-content col-xs-12 noPadding">
+								Xem trọng việc tự học của học viên như FUNiX sẽ tạo nên sự khác biệt rất lớn. Tôi nghĩ, “Wow, đây là những điều mình cần”. Không cần phải lên lớp như hình thức học tập trung; không cần so sánh với bạn bè bởi việc học căn cứ vào mức tiến bộ của bản thân; chủ động về thời gian, không ảnh hưởng đến công việc hiện tại,
+								miễn là tôi sắp xếp thời gian hợp lý
+							</div>
+							<a href="" class="testimonial-link"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						</div>
+					</div><!-- /.testimonial-item -->
+					<div class="clearfix"></div>
+					<a href="#registerForm" class="section-button-register middle-button text-center blank-button toRegister">Đăng ký ngay</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq-section col-xs-12 noPadding">
+			<div class="container">
+				<div class="row">
+					<h3 class="text-center">CÁC CÂU HỎI THƯỜNG GẶP</h3>
+					<div class="faq-wrapper col-xs-12 noPadding">
+						<div class="faq-item col-xs-12 col-sm-12 col-md-4 wow fadeInUp" data-wow-delay="2s">
+							<a href=""><img src="lib/images/faq1.png" alt="" class="img-responsive center-block"></a>
+						</div><!-- /.faq-item -->
+
+						<div class="faq-item col-xs-12 col-sm-12 col-md-4 wow fadeInUp" data-wow-delay="2s">
+							<a href=""><img src="lib/images/faq2.png" alt="" class="img-responsive center-block"></a>
+						</div><!-- /.faq-item -->
+
+						<div class="faq-item col-xs-12 col-sm-12 col-md-4 wow fadeInUp" data-wow-delay="2s">
+							<a href=""><img src="lib/images/faq3.png" alt="" class="img-responsive center-block"></a>
+						</div><!-- /.faq-item -->
+					</div><!-- /.faq-wrapper -->
+					<div class="clearfix"></div>
+					<a href="" class="middle-button text-center blank-button faq-more">Xem thêm câu hỏi</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer col-xs-12 noPadding" id="footer">
+		<div class="container">
+			<div class="row">
+				<img src="lib/images/logo.png" alt="" class="img-responsive footer-logo pull-left">
+				<div class="footer-wrapper col-xs-12 noPadding">
+					<div class="footer-col col-xs-12 col-sm-12 col-md-5">
+						<h4 class="footer-head">Đại học trực tuyến Funix</h4>
+						<div class="footer-content col-xs-12 noPadding">
+							Địa chỉ: Tầng 0 tòa nhà FPT, phố Duy Tân, Cầu Giấy, Hà Nội<br>
+							Hotline: 04.7300.5656<br>
+							Email: funix-support@fpt.edu.vn
+						</div>
+					</div><!-- /.footer-col -->
+					<div class="footer-col hidden-xs hidden-sm col-md-4">
+						<h4 class="footer-head">Funix</h4>
+						<div class="footer-content col-xs-12 noPadding">
+							<ul class="nav">
+								<li><a href="">Giới thiệu</a></li>
+								<li><a href="">Chương trình học</a></li>
+								<li><a href="">Cách học</a></li>
+								<li><a href="">Mentor</a></li>
+								<li><a href="">Tuyển sinh</a></li>
+								<li><a href="">Câu hỏi thường gặp</a></li>
+								<li><a href="">Góp ý</a></li>
+							</ul>
+						</div>
+					</div><!-- /.footer-col -->
+					<div class="footer-col hidden-xs hidden-sm col-md-3">
+						<h4 class="footer-head">Kết nối với Funix</h4>
+						<div class="footer-content col-xs-12 noPadding">
+							<div class="fb-page" data-href="https://www.facebook.com/daihocfunix/?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/daihocfunix/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/daihocfunix/?fref=ts">Đại học trực tuyến FUNiX</a></blockquote></div>
+						</div>
+					</div><!-- /.footer-col -->
+				</div><!-- /.footer-wrapper -->
+			</div>
+		</div>
+	</footer>
+  	<!-- Load JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="lib/js/wow.min.js"></script>
+	<script type="text/javascript" src="lib/js/script.js"></script>
+	<script type="text/javascript" src="lib/js/register.js"></script>
+</body>
+</html>

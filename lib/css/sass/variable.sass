@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,vietnamese,latin-ext);
+
+// Color
+$textColor: #222;
+$mainColor: #fd6610;
+
+.mainColor
+	color: $mainColor;
+//Trasition 
+@mixin transitionDelay($time)
+	transition: all $time linear 0s
+
+a, a:hover
+	transitionDelay(500ms)
+
+.noPadding 
+	padding: 0;
+
+@keyframes animatedBackground
+	from
+		background-position: 0 0;
+	to
+		background-position: 100% 0;
+
+@keyframes flyingBalloon
+	0% 
+		top: 0px;
+	30%
+		top: 10px;
+	50%
+		top: 20px;
+	70%
+		top: 10px;
+	100%
+		top: 0px;
+@keyframes loading 
+	from 
+		max-width: 0;
+		
+
+.middle-button
+	max-width: 260px;
+	border: 4px solid;
+	margin: 20px auto 0;
+	display: block;
+	text-transform: uppercase;
+	font-size: 25px;
+	clear: both;
+	&:hover 
+		text-decoration: none;
+
+.color-button
+	color: $mainColor!important;
+	border-color: $mainColor!important;
+	&:hover 
+		color: #fff!important;
+		background: $mainColor;
+
+.blank-button
+	border: 2px solid $textColor;
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+	background: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $textColor;
+	&:hover
+		color: #fff;
+		background: $mainColor;
+
+.fixed-top-menu
+	position: fixed;
+	top: 0;
+	z-index: 9999999;		
+
+h3 
+	color: $mainColor;
+	text-transform: uppercase;
+
+.responsive-navbar 
+	li 
+		a 
+			&:hover, &:focus, &:visited, &:active 
+				background: none;
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+	background: none;
+
+.why-choice-qoute-title
+	font-size: 25px;
+
